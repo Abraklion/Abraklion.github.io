@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <script defer src="js/all.min.js"></script>
+    <title>Тест</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 1 .fixed -->
+        
+<header class="fixed">
+    <div class="fixed__wrap wrapper">
+        <div class="fixed__menu">
+            <div class="fixed__menu-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="fixed__menu-right">Меню</div>
+        </div>
+        <div class="fixed__title"><span>Ремонт</span>Номер 1 в Тамбове</div>
+        <div class="fixed__address"><span>Тамбов</span>ул. Магистральная</div>
+        <div class="fixed__info">
+            <a class="fixed__info-tel" href="tel:88001234567">
+                <span>8 800 123 45 67</span>
+                <img src="img/phone.svg" alt="Картинка">
+            </a>
+            <button class="fixed__info-btn">Закажите звонок</button>
+            <div class="fixed__info-callback">Перезвоним <br>за 24 секунды</div>
+        </div>
+    </div>
+</header>
+
+        <!-- 2 .pagination -->
+        
+<div class="pagination">
+    <ul class="pagination__box nav">
+        <li data-menuanchor="firstPage" class="pagination__item"><a aria-label="Первый экран" href="#firstPage" class="pagination__link"></a></li>
+        <li data-menuanchor="secondPage" class="pagination__item"><a aria-label="Второй экран" href="#secondPage" class="pagination__link"></a></li>
+        <li data-menuanchor="thirdPage" class="pagination__item"><a aria-label="Третий экран" href="#thirdPage" class="pagination__link"></a></li>
+        <li data-menuanchor="fourthPage" class="pagination__item"><a aria-label="Четвертый экран" href="#fourthPage" class="pagination__link"></a></li>
+        <li data-menuanchor="singPage" class="pagination__item"><a aria-label="Пятый экран" href="#singPage" class="pagination__link"></a></li>
+        <li data-menuanchor="lastPage" class="pagination__item"><a aria-label="Шестой экран" href="#lastPage" class="pagination__link"></a></li>
+    </ul>
+    <button class="pagination__scroll">
+        <img src="img/scroll-down.svg" alt="Картинка">
+        <span>Скрольте<br>ниже</span>
+    </button>
+</div>
+
+
+        <!-- 3 .menu -->
+        
+<div class="menu">
+    <nav class="menu__wrap">
+        <button class="menu__btn">Меню</button>
+        <ul class="menu__list nav">
+            <li data-menuanchor="secondPage" class="menu__item"><a href="#secondPage" class="menu__link">Портфолио</a></li>
+            <li data-menuanchor="thirdPage" class="menu__item"><a href="#thirdPage" class="menu__link">Детали работы</a></li>
+            <li data-menuanchor="fourthPage" class="menu__item"><a href="#fourthPage" class="menu__link">Как работаем</a></li>
+            <li data-menuanchor="singPage" class="menu__item"><a href="#singPage" class="menu__link">Калькулятор</a></li>
+            <li data-menuanchor="lastPage" class="menu__item"><a href="#lastPage" class="menu__link"> Контакты</a></li>
+        </ul>
+        <div class="menu__info">
+            <div class="menu__info-tel">8 800 123 45 67</div>
+            <button class="menu__info-btn">Закажите звонок</button>
+            <div class="menu__info-callback">Перезвоним за 24 секунды</div>
+        </div>
+    </nav>
+</div>
+
+        <main class="fullpage">
+
+            <!-- 4 .header -->
+            
+<div class="header section">
+    <div class="header__wrap wrapper">
+        <h1 class="header__title">Ремонт квартир в Тамбове</h1>
+        <h2 class="header__subtitle">от 5000 &#8381;/м сроком от 10 дней с гарантией 1 год</h2>
+        <div class="header__box">
+            <a href="#" class="header__btn">Смотреть работы</a>
+            <p class="header__leader">
+                <span>Лидер рынка</span>
+                <span>2019</span>
+            </p>
+        </div>
+    </div>
+    <div class="header__wrap-two wrapper">
+        <ul class="header__advantages advantag">
+            <li class="advantag__item">
+                <img class="advantag__img" src="img/icon1.svg" alt="Картинка">
+                <p class="advantag__txt">Замер помещения для будущего ремонта</p>
+            </li>
+            <li class="advantag__item">
+                <img class="advantag__img" src="img/icon2.svg" alt="Картинка">
+                <p class="advantag__txt">Подробная смета работ</p>
+            </li>
+            <li class="advantag__item">
+                <img class="advantag__img" src="img/icon3.svg" alt="Картинка">
+                <p class="advantag__txt">Расчет стоимости материалов материалов</p>
+            </li>
+            <li class="advantag__item">
+                <img class="advantag__img" src="img/icon4.svg" alt="Картинка">
+                <p class="advantag__txt">Предварительную стоимость ремонта</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+            <!-- 5 .work -->
+            
+<section class="work section">
+    <div class="work__wrap wrapper">
+        <div class="work__slider slide">
+            <h2 class="work__title">с 2012 года успешно сдали более 300 объектов</h2>
+            <p class="work__subtitle">Вот несколько примеров</p>
+            <div class="work__box">
+                <div class="work__gallery gallery">
+                    <div class="gallery__big">
+                        <img src="img/gallery-big3.jpg" alt="Картинка">
+                    </div>
+                    <div class="gallery__mini">
+                        <a aria-label="Первое фото" data-src="img/gallery-big1.jpg" href="#">
+                            <img src="img/gallery-mini1.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Второе фото" data-src="img/gallery-big2.jpg" href="#">
+                            <img src="img/gallery-mini2.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Третье фото" data-src="img/gallery-big3.jpg" href="#">
+                            <img src="img/gallery-mini3.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Четвертое фото" data-src="img/gallery-big4.jpg" href="#">
+                            <img src="img/gallery-mini4.jpg" alt="Картинка">
+                        </a>
+                    </div>
+                </div>
+                <div class="work__descriptions">
+                    <p class="work__descriptions-title">Что было:</p>
+                    <p class="work__descriptions-text">Квартира со стандартной планировкой и черновой отделкой.</p>
+                    <p class="work__descriptions-title">Задача:</p>
+                    <ul class="work__descriptions-list">
+                        <li class="work__descriptions-item">Дистанционно разработать дизайн-проект с полследующей
+                            реализацией.
+                        </li>
+                        <li class="work__descriptions-item">Подобрать все необходимые материалы и предметы интерьера.</li>
+                        <li class="work__descriptions-item">Заказчик сразу пожелал сделать новые перегородки из
+                            газобетона.
+                        </li>
+                    </ul>
+                    <p class="work__descriptions-title">Результат:</p>
+                    <p class="work__descriptions-text">Произвели полный демонтаж стен и поставили прегородки. За счет
+                        препланировки квартиры освободили много полезного пространства. Квартира получилась светлая и
+                        уютная. Поменяли всю электрику под дизайн-проект.</p>
+                </div>
+                <div class="work__table">
+                    <div class="work__table-item">
+                        <p>Объект: <span>3-х комнатная квартира</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Площадь: <span>81 м2</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Жилой комплекс: <span>Гранд фамилия</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Вид ремонта: <span>Премиум</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Срок выполнения: <span>6 месяцев</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Стоимость: <span>1 600 000 Р</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work__slider slide">
+            <h2 class="work__title">с 2012 года успешно сдали более 300 объектов</h2>
+            <p class="work__subtitle">Вот несколько примеров</p>
+            <div class="work__box">
+                <div class="work__gallery gallery">
+                    <div class="gallery__big">
+                        <img src="img/gallery-big4.jpg" alt="Картинка">
+                    </div>
+                    <div class="gallery__mini">
+                        <a aria-label="Первое фото" data-src="img/gallery-big1.jpg" href="#">
+                            <img src="img/gallery-mini1.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Второе фото" data-src="img/gallery-big2.jpg" href="#">
+                            <img src="img/gallery-mini2.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Третье фото" data-src="img/gallery-big3.jpg" href="#">
+                            <img src="img/gallery-mini3.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Четвертое фото" data-src="img/gallery-big4.jpg" href="#">
+                            <img src="img/gallery-mini4.jpg" alt="Картинка">
+                        </a>
+                    </div>
+                </div>
+                <div class="work__descriptions">
+                    <p class="work__descriptions-title">Что было:</p>
+                    <p class="work__descriptions-text">Квартира со стандартной планировкой и черновой отделкой.</p>
+                    <p class="work__descriptions-title">Задача:</p>
+                    <ul class="work__descriptions-list">
+                        <li class="work__descriptions-item">Дистанционно разработать дизайн-проект с полследующей
+                            реализацией.
+                        </li>
+                        <li class="work__descriptions-item">Подобрать все необходимые материалы и предметы интерьера.</li>
+                        <li class="work__descriptions-item">Заказчик сразу пожелал сделать новые перегородки из
+                            газобетона.
+                        </li>
+                    </ul>
+                    <p class="work__descriptions-title">Результат:</p>
+                    <p class="work__descriptions-text">Произвели полный демонтаж стен и поставили прегородки. За счет
+                        препланировки квартиры освободили много полезного пространства. Квартира получилась светлая и
+                        уютная. Поменяли всю электрику под дизайн-проект.</p>
+                </div>
+                <div class="work__table">
+                    <div class="work__table-item">
+                        <p>Объект: <span>3-х комнатная квартира</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Площадь: <span>81 м2</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Жилой комплекс: <span>Гранд фамилия</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Вид ремонта: <span>Премиум</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Срок выполнения: <span>6 месяцев</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Стоимость: <span>1 600 000 Р</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work__slider slide">
+            <h2 class="work__title">с 2012 года успешно сдали более 300 объектов</h2>
+            <p class="work__subtitle">Вот несколько примеров</p>
+            <div class="work__box">
+                <div class="work__gallery gallery">
+                    <div class="gallery__big">
+                        <img src="img/gallery-big1.jpg" alt="Картинка">
+                    </div>
+                    <div class="gallery__mini">
+                        <a aria-label="Первое фото" data-src="img/gallery-big1.jpg" href="#">
+                            <img src="img/gallery-mini1.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Второе фото" data-src="img/gallery-big2.jpg" href="#">
+                            <img src="img/gallery-mini2.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Третье фото" data-src="img/gallery-big3.jpg" href="#">
+                            <img src="img/gallery-mini3.jpg" alt="Картинка">
+                        </a>
+                        <a aria-label="Четвертое фото" data-src="img/gallery-big4.jpg" href="#">
+                            <img src="img/gallery-mini4.jpg" alt="Картинка">
+                        </a>
+                    </div>
+                </div>
+                <div class="work__descriptions">
+                    <p class="work__descriptions-title">Что было:</p>
+                    <p class="work__descriptions-text">Квартира со стандартной планировкой и черновой отделкой.</p>
+                    <p class="work__descriptions-title">Задача:</p>
+                    <ul class="work__descriptions-list">
+                        <li class="work__descriptions-item">Дистанционно разработать дизайн-проект с полследующей
+                            реализацией.
+                        </li>
+                        <li class="work__descriptions-item">Подобрать все необходимые материалы и предметы интерьера.</li>
+                        <li class="work__descriptions-item">Заказчик сразу пожелал сделать новые перегородки из
+                            газобетона.
+                        </li>
+                    </ul>
+                    <p class="work__descriptions-title">Результат:</p>
+                    <p class="work__descriptions-text">Произвели полный демонтаж стен и поставили прегородки. За счет
+                        препланировки квартиры освободили много полезного пространства. Квартира получилась светлая и
+                        уютная. Поменяли всю электрику под дизайн-проект.</p>
+                </div>
+                <div class="work__table">
+                    <div class="work__table-item">
+                        <p>Объект: <span>3-х комнатная квартира</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Площадь: <span>81 м2</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Жилой комплекс: <span>Гранд фамилия</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Вид ремонта: <span>Премиум</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Срок выполнения: <span>6 месяцев</span></p>
+                    </div>
+                    <div class="work__table-item">
+                        <p>Стоимость: <span>1 600 000 Р</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work__count">
+            <span class="work__count-first">1</span>
+            /
+            <span class="work__count-last"></span>
+        </div>
+    </div>
+</section>
+
+            <!-- 6 .details -->
+            
+<section class="details section">
+    <div class="details__wrap wrapper">
+        <h2 class="details__title">При ремонте помещений учитываем все детали</h2>
+        <p class="details__subtitle">Качество ремонта соотвествует ожиданиям клиента. Потому что для своих ремонтов мы используем исключительно качественные материалы партнеров.</p>
+        <ul class="details__list">
+            <li class="details__item-wrap">
+                <div class="details__item">
+                    <span class="details__plus"></span>
+                    <span class="details__text">Красим любые поверхности равномерно</span>
+                </div>
+            </li>
+            <li class="details__item-wrap">
+                <div class="details__item">
+                    <span class="details__plus"></span>
+                    <span class="details__text">Красим любые поверхности равномерно</span>
+                </div>
+            </li>
+            <li class="details__item-wrap">
+                <div class="details__item">
+                    <span class="details__plus"></span>
+                    <span class="details__text">Красим любые поверхности равномерно</span>
+                </div>
+            </li>
+            <li class="details__item-wrap">
+                <div class="details__item">
+                    <span class="details__plus"></span>
+                    <span class="details__text">Красим любые поверхности равномерно</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+            <!-- 7 .advantages -->
+            
+<section class="advantages section">
+    <div class="advantages__wrap wrapper">
+        <h2 class="advantages__title">Вот так мы упрощаем жизнь наших клиентов</h2>
+        <div class="advantages__box">
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Ремонт</p>
+                <p class="advantages__text">Выполним ремонт любой сложности и любого помещения в назначенные сроки</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Дизайн проект</p>
+                <p class="advantages__text">Составим индивидуальный дизайн - проект, исходя из ваших пожеланий</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Бесплатный замер</p>
+                <p class="advantages__text">Замерщик предет на замер в любое удобное для вас время и бесплатно составит смету</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Закупка стройматериалов</p>
+                <p class="advantages__text">Поможем или самостоятельно закупим стройматериалов со скидкой до 25%</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Бесплатная доставка</p>
+                <p class="advantages__text">Обеспечим доставку стройматериалов в уставновленные сроки</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Уборка мусора</p>
+                <p class="advantages__text">Выполним ремонт любой сложности и любого помещения в назначенные сроки</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Подарки клиентам</p>
+                <p class="advantages__text">При заказе ремонта под ключ дарим приятные подарки нашим клиентам</p>
+            </div>
+            <div class="advantages__element">
+                <p class="advantages__subtitle">Контроль качества</p>
+                <p class="advantages__text">В любой момент вы можете самостоятельно оценить качество выполняемых работ</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- 8 .calculator -->
+            
+<section class="calculator section">
+    <div class="calculator__wrap wrapper">
+        <h2 class="calculator__title">Расчитайте стоимость ремонта</h2>
+        <div class="calculator__box">
+            <div class="calculator__img">
+                <picture>
+                    <source media="(min-width:1024px)" srcset="img/calculator-desktop.png">
+                    <img src="img/calculator.png" alt="Картинка">
+                </picture>
+            </div>
+            <div class="calculator__form form">
+                <form class="form__box" action="#" method="post">
+                    <fieldset class="form__group">
+                        <legend class="form__name">Тип здания:</legend>
+                        <div class="form__wrap">
+                            <div class="form__radio">
+                                <input id="new" type="radio" name="building" value="new" checked>
+                                <label for="new">Новостройка</label>
+                            </div>
+                            <div class="form__radio">
+                                <input id="old" type="radio" name="building" value="old">
+                                <label for="old">Вторичка</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__group">
+                        <legend class="form__name">Местонахождение:</legend>
+                        <div class="form__wrap">
+                            <div class="form__radio">
+                                <input id="tambow" type="radio" name="location" value="tambow" checked>
+                                <label for="tambow">Тамбов</label>
+                            </div>
+                            <div class="form__radio">
+                                <input id="region" type="radio" name="location" value="region">
+                                <label for="region">Область</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__group">
+                        <legend class="form__name">Тип ремонта:</legend>
+                        <div class="form__wrap">
+                            <div class="form__radio">
+                                <input id="kosmetik" type="radio" name="remont" value="kosmetik" checked>
+                                <label for="kosmetik">Косметический</label>
+                            </div>
+                            <div class="form__radio">
+                                <input id="capital" type="radio" name="remont" value="capital">
+                                <label for="capital">Капитальный</label>
+                            </div>
+                            <div class="form__radio">
+                                <input id="designer" type="radio" name="remont" value="designer">
+                                <label for="designer">Дизайнерский</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__group">
+                        <legend class="form__name">Площадь м2:</legend>
+                        <div class="form__wrap">
+                            <div class="form__input">
+                                <input class="form__square" aria-label="Площадь помещения" type="number" name="square" min="1" max="1000" placeholder="68">
+                            </div>
+                            <div class="form__range">
+                                <output>1</output>
+                                <input aria-label="Площадь помещения" type="range" name="square" min="1" max="1000" step="1" value="1">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form__wrap">
+                        <button class="form__btn">Расчитать</button>
+                        <p class="form__result">Результат <span>1 000 000</span> &#8381;</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- 9 .footer -->
+            
+<section class="footer section">
+    <div class="footer__wrap wrapper">
+        <h2 class="footer__title">Свяжитесь с нами любым удобным способом</h2>
+        <address class="footer__box">
+            <p class="footer__tel">
+                <strong>Телефон:</strong>
+                <a href="tel:88001234567">8 800 123 45 67</a>
+            </p>
+            <p class="footer__mail">
+                <strong>Почта:</strong>
+                <a href="mailto:mail.com">test@gmail.com</a>
+            </p>
+            <p class="footer__guest">Или приезжайте к нам в гости</p>
+            <p class="footer__address">
+                <strong>Адрес:</strong>
+                <span>Москва ул. Магистральная</span>
+            </p>
+            <p class="footer__map">
+                <strong>Как найти нас быстро</strong>
+                <a href="#">Схема прохода</a>
+            </p>
+        </address>
+    </div>
+</section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
