@@ -1,0 +1,1042 @@
+@import url(reset.css);
+
+/* --------------- Подключения шрифтов ---------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+/*font-family: 'Montserrat', sans-serif;*/
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* --------------- Подключения шрифтов ---------*/
+
+/* --------------- Базовые настройки ---------*/
+
+body {
+	color: #666666;
+	font-size: 1em; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited {
+	color: #161C35;
+	text-decoration: underline;
+}
+a:hover {
+	color: #161C35;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #161C35;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+
+img{
+	max-width:100%;
+}
+
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* --------------- Базовые настройки ---------*/
+
+/* Общие стили - начало */
+
+	/* Обертка */
+	.wrapper{
+		max-width: 1170px;
+		padding: 0 15px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+
+	/* Заголовки h2 */
+	.headers-h2{
+		font: 600 30px/40px 'Montserrat', sans-serif;
+		color: #444;
+		text-align: center;
+		text-transform: uppercase;
+	}
+		.headers-h2 span{
+			position: relative;
+		}
+		.headers-h2 span::after{
+			content: '';
+			position: absolute;
+			background: #444444;
+			width: 40%;
+			height: 2px;
+			left: 50%;
+			bottom: -20%;
+			margin: 0 0 0 -20%;
+		}
+
+/* Общие стили - конец */
+
+/* 1 Шапка - начало */
+
+header{
+	background: #161c35;
+	height: 65px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+	header > .wrapper{
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+		.logo{
+			/* - */
+		}
+
+		/* Меню */
+		.menu{
+			margin: 0 0 0 auto;
+		}
+			.menu ul{
+				font-weight: 400;
+				font-size: 15px;
+				font-family: 'Roboto', sans-serif;
+				letter-spacing: 1px;
+			}
+				.menu ul li{
+					display: inline-block;
+					margin: 0 0 0 15px;
+					position: relative;
+				}
+					.menu ul li a{
+						color: #fff;
+						text-decoration: none;
+					}
+				.menu ul li::after{
+					content: '';
+					position: absolute;
+					width: 10%;
+					height: 3px;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					bottom: -11px;
+					background-color: #00D5C3;
+					opacity: 0;
+					transition-duration: 0.3s;
+				}
+				.menu ul li:hover::after{
+					width: 100%;
+					opacity: 1;
+				}
+		/* Меню */
+
+/* Шапка - конец */
+
+/* 2 Основной контент - начало */
+
+main{
+	/* - */
+}
+
+	/* 2.1 Карта продукта - начало */
+	.bord{
+		background: url(../images/bg.jpg) center -50px/cover no-repeat fixed;
+		position: relative;
+	}
+	.bord::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(33, 42, 73, 0.6);
+		z-index: 1;
+	}
+
+		.bord > .wrapper{
+			display: flex;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			position: relative;
+			z-index: 2;
+		}
+			
+			.bord_left-block{
+				flex: 0 0 50%;
+			}
+				.bord_left-block h1{
+					color: #fff;
+					padding: 25px 0 0 30px;
+					margin: 0 0 35px 0;
+					font-weight: 600;
+					font-size: 48px;
+					font-family: 'Montserrat', sans-serif;
+					line-height: 58px;
+					position: relative;
+				}
+				.bord_left-block h1::before{
+					content: '';
+					width: 115px;
+					height: 5px;
+					background-color: #00D5C3;
+					position: absolute;
+					top: 0;
+					left: 0;
+
+				}
+				.bord_left-block h1::after{
+					content: '';
+					width: 5px;
+					height: 115px;
+					background-color: #00D5C3;
+					position: absolute;
+					top: 0;
+					left: 0;
+
+				}
+				.bord_left-block p{
+					color: #fff;
+					font-weight: 400;
+					margin: 0 0 45px 0;
+					line-height: 1.4;
+				}
+				.bord_left-block__link{
+					display: flex;
+				}
+					.bord_left-block__link a{
+						flex: 0 0 auto;
+						border: 1px solid #00D5C3;
+						border-radius: 0 5px 0 5px;
+						padding: 7px 8px 7px 63px;
+						color: #fff;
+						font: 400 12px 'Montserrat', sans-serif;
+						line-height: 1.3;
+						text-decoration: none;
+						position: relative;
+						transition-duration: 0.3s;
+						margin: 0 20px 0 0;
+					}
+					.bord_left-block__link a:first-child::before{
+						content: '\f17b';
+						position: absolute;
+						left: 15px;
+						top: 5px;
+						font-size: 30px;
+						font-family: fontawesome;
+						color: #00D5C3;
+						transition-duration: 0.3s;
+					}
+					.bord_left-block__link a:last-child::before{
+						content: '\f179';
+						position: absolute;
+						left: 18px;
+						top: 3px;
+						font-size: 30px;
+						font-family: fontawesome;
+						color: #00D5C3;
+						transition-duration: 0.3s;
+					}
+					.bord_left-block__link a:hover{
+						background: #00D5C3;
+					}
+					.bord_left-block__link a:hover::before{
+						color: #fff;
+					}
+						.bord_left-block__link a strong{
+							font-weight: 600;
+							font-size: 14px;
+						}
+
+			.bord > .wrapper > img{
+				margin: auto;
+			}
+	/* Карта продукта - конец */
+
+	/* 2.2 Сервис - начало */
+	.service{
+		padding: 60px 0;
+	}
+
+		.service > .wrapper{
+			/* - */
+		}
+
+			.service_block{
+				margin: 30px 0 0 0;
+				display: flex;
+				justify-content: space-between;
+			}
+
+				.service_block__item{
+					flex: 0 0 32%;
+					padding: 30px;
+					box-sizing: border-box;
+					border-radius: 5px;
+					transition-duration: 0.3s;
+				}
+				.service_block__item:hover{
+					box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.2);
+				}
+					.service_block__item___icon{
+						width: 108px;
+						height: 108px;
+						margin: 0 auto;
+						border: 1px solid #161C35;
+						border-radius: 50%;
+						box-sizing: border-box;
+						text-align: center;
+						transition-duration: 0.3s;
+					}
+					.service_block__item:hover .service_block__item___icon{
+						background: #161C35;
+					}
+						.service_block__item___icon > i{
+							font-size: 54px;
+							line-height: 108px;
+							color: #161C35;
+							transition-duration: 0.3s;
+						}
+						.service_block__item:hover .service_block__item___icon > i{
+							color: #fff;
+						}
+					.service_block__item > h3{
+						margin: 23px 0;
+						font: 600 24px 'Montserrat', sans-serif;
+						color: #161C35;
+						text-align: center;
+					}
+					.service_block__item > p{
+						line-height: 1.5;
+						text-align: center;
+						margin: 0 0 20px 0;
+					}
+					.service_block__item > a{
+						display: block;
+						width: 150px;
+						height: 50px;
+						margin: 0 auto;
+						border: 1px solid #161C35;
+						border-radius: 0 5px 0 5px;
+						box-sizing: border-box;
+						font: 400 18px/50px 'Montserrat', sans-serif;
+						text-align: center;
+						text-decoration: none;
+						color: #161C35;
+						transition-duration: 0.3s;
+					}
+					.service_block__item > a:hover{
+						background: #161C35;
+						color: #fff;
+					}
+	/* Сервис - конец */
+
+	/* 2.3 Работа - начало */
+	.work{
+		background: url(../images/banner-bg.jpg) left top/cover no-repeat;
+		position: relative;
+		padding: 60px 0;
+	}
+	.work::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(33, 42, 73, 0.6);
+		z-index: 3;
+	}
+
+		.work > .wrapper{
+			position: relative;
+			z-index: 4;
+		}
+
+			.work .headers-h2{
+				color: #fff;
+			}
+			.work .headers-h2 span::after{
+				background: #fff;
+			}
+			
+			.work_block{
+				margin: 30px 0 0 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+				.work_block__left{
+					flex: 0 0 60%;
+					color: #fff;
+					line-height: 24px;
+				}
+					.work_block__left > h3{
+						font-weight: 600;
+						font-size: 24px;
+						margin: 0 0 30px 0;
+					}
+					.work_block__left > p{
+						margin: 0 0 20px 0;
+					}
+					.work_block__left > ul{
+						list-style-type: none;
+					}
+						.work_block__left > ul > li{
+							padding: 0 0 0 22px;
+							margin: 0 0 15px 0;
+							position: relative;
+						}
+						.work_block__left > ul > li::before{
+							content: '\f105';
+							position: absolute;
+							left: 0;
+							font-family: fontawesome;
+							color: #00D5C3;
+						}
+
+				.work_block > img{
+					/* - */
+				}
+	/* Работа - конец */
+
+	/* 2.4 Команда - начало */
+	.team{
+		padding: 60px 0;
+	}
+
+		.team > .wrapper{
+			/* - */
+		}
+
+			.team_block{
+				padding: 30px 10px;
+				display: flex;
+				justify-content: space-between;
+			}
+
+				.team_block__item{
+					flex: 0 0 255px;
+					display: flex;
+					flex-direction: column;
+				}
+					.team_block__item___img{
+						position: relative;
+						height: 260px;
+						overflow: hidden;
+					}
+						.team_block__item___img > img{
+							transition-duration: 1s;
+						}
+						.team_block__item___img:hover > img{
+							transform: scale3d(1.1, 1.1, 1);
+						}
+						.team_block__item___img > figcaption{
+							position: absolute;
+						    left: 0;
+						    right: 0;
+						    top: 0;
+						    bottom: 0;
+						    background: rgba(22, 28, 53, 0);
+						    display: flex;
+						    justify-content: center;
+						    transition-duration: 0.1s;
+						}
+						.team_block__item___img:hover > figcaption{
+							 background: rgba(22, 28, 53, 0.7);
+						}
+							.team_block__item___img > figcaption > a{
+								text-decoration: none;
+								width: 30px;
+								height: 30px;
+								margin: 10px;
+								border: 1px solid #fff;
+								margin-top: auto;
+    							margin-bottom: 20px;
+    							color: #fff;
+    							text-align: center;
+    							line-height: 30px;
+    							transition-duration: 0.5s;
+    							box-sizing: border-box;
+							}
+							.team_block__item___img > figcaption > a:hover{
+								background: #fff;
+								color: #00D5C3;
+							}
+							.team_block__item___img > figcaption > a:nth-child(1){
+								transform: translateY(50px);
+							}
+							.team_block__item___img > figcaption > a:nth-child(2){
+								transform: translateY(90px);
+							}
+							.team_block__item___img > figcaption > a:nth-child(3){
+								transform: translateY(130px);
+							}
+							.team_block__item___img:hover figcaption > a{
+								transform: translateY(0px);
+							}
+								.team_block__item___img > figcaption > a > i{
+									/* - */
+								}
+					.team_block__item___text{
+						padding: 20px;
+						box-shadow: 4px 4px 18px 0px #cccccc;
+						color: ##666666;
+					}
+						.team_block__item___text > h3{
+							font: 600 24px 'Montserrat', sans-serif;
+						}
+						.team_block__item___text > span{
+							display: block;
+							font: 300 12px 'Roboto', sans-serif;
+						}		
+	/* Команда - конец */
+
+	/* 2.5 Блог - начало */
+	.blog{
+		background: url(../images/blog-bg.jpg) center center/cover no-repeat;
+		padding: 60px 0;
+		position: relative;
+	}
+	.blog::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(33, 42, 73, 0.6);
+		z-index: 5;
+	}
+
+		.blog > .wrapper{
+			position: relative;
+			z-index: 6;
+			text-align: center
+		}
+
+			.blog .headers-h2{
+				color: #fff;
+			}
+			.blog .headers-h2 span::after{
+				background: #fff;
+			}
+
+			.blog_block{
+				margin: 30px 0 0 0;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+
+				.blog_block__item{
+					flex: 0 0 49%;
+					display: flex;
+					text-decoration: none;
+					background: #fff;
+					margin: 0 0 22px 0;
+				}
+					.blog_block__item___left{
+						flex: 0 0 50%;
+						height: 275px;
+						position: relative;
+					}
+					.blog_block__item___left::after{
+						content: '';
+						position: absolute;
+						display: block;
+						border-top: 15px solid transparent;
+						border-right: 15px solid #fff;
+						border-bottom: 15px solid transparent;
+						right: 0;
+						top: 50%;
+						margin: -7px 0 0 0;
+					}
+						.blog_block__item___left > img{
+							width: 100%;
+							height: 275px;
+							filter: grayscale(0.9);
+							transition-duration: 0.3s;
+							object-fit: cover;
+						}
+						.blog_block__item:hover .blog_block__item___left > img{
+							filter: grayscale(0);
+						}
+					.blog_block__item___right{
+						width: calc(50% - 80px);
+						padding: 40px;
+						display: flex;
+						justify-content: center;
+						flex-direction: column;
+					}
+						.blog_block__item___right > span{
+							display: block;
+							font: 12px/20px 'Montserrat', sans-serif;
+							letter-spacing: 2px;
+							text-align: center;
+							text-transform: uppercase;
+							color: #333;
+						}
+						.blog_block__item___right > h3{
+							font-weight: 600;
+							font-size: 18px;
+							line-height: 24px;
+							letter-spacing: 1px;
+							text-align: center;
+							text-transform: uppercase;
+							color: #161C35;
+						}
+						.blog_block__item:hover .blog_block__item___right > h3{
+							text-decoration: underline;
+						}
+
+			.blog .blog_button{
+				display: inline-block;
+				padding: 10px 30px;
+				margin: 30px 0 0 0;
+				border: 1px solid #00D5C3;
+				border-radius: 0 5px 0 5px;
+				font: 18px 'Montserrat', sans-serif;
+				text-decoration: none;
+				text-align: center;
+				transition-duration: 0.3s;
+				color: #00D5C3;
+			}
+			.blog_button:hover{
+				background: #00D5C3;
+				color: #fff;
+			}
+	/* Блог - конец */
+
+	/* 2.6 Контакты - начало */
+	.contact{
+		padding: 60px 0;
+	}
+
+		.contact > .wrapper{
+			/* - */
+		}
+
+			.contact_map{
+				margin: 30px 0 0 0;
+			}
+				.contact_map iframe{
+					width: 100%;
+					height: 450px;
+				}
+	/* Контакты - конец */
+
+	/* 2.7 Подписка - начало */
+	.subscribe{
+		background: url(../images/bg.jpg) center -50px/cover no-repeat fixed;
+		height: 200px;
+		position: relative;
+	}
+	.subscribe::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(33, 42, 73, 0.6);
+		z-index: 7;
+	}
+
+		.subscribe > .wrapper{
+			position: relative;
+			z-index: 8;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+			.subscribe_text{
+				font: 300 20px 'Montserrat', sans-serif;
+				color: #00D5C3;
+				margin: 0 0 20px 0;
+			}
+				.subscribe_text > span{
+					font-weight: 600;
+					color: #fff;
+				}
+
+			.subscribe_form{
+				display: flex;
+				justify-content: center;
+			}
+				.subscribe_form > input{
+					flex: 0 0 auto;
+					width: calc(450px - 22px);
+					background: transparent;
+					border: 1px solid #00D5C3;
+					font: 300 18px 'Roboto', sans-serif;
+					color: #fff;
+					padding: 10px;
+
+				}
+				.subscribe_form > button{
+					flex: 0 0 auto;
+					width: calc(100px - 2px);
+					background: #00D5C3;
+					border: 1px solid #00D5C3;
+					font-size: 22px;
+					color: #fff;
+					transition-duration: 0.3s;
+				}
+				.subscribe_form > button:hover{
+					background: #fff;
+					border: 1px solid #fff;
+					color: #00D5C3;
+				}
+					.subscribe_form > button > i{
+						/* - */
+					}
+	/* Подписка - конец */
+
+/* Основной контент - конец */
+
+/* 3 Подвал - начало */
+footer{
+	padding: 60px 0;
+}
+
+	footer > .wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+		.ftr_logo{
+			margin: 0 0 20px 0;
+		}
+
+		.ftr_social{
+			margin: 0 0 20px 0;
+		}
+			.ftr_social > a{
+				display: inline-block;
+				position: relative;
+				width: 20px;
+				text-align: center;
+				text-decoration: none;
+				margin: 10px;
+				transition-duration:0.3s;
+			}
+			.ftr_social > a:hover{
+				color: #fff;
+			}
+			.ftr_social > a::before{
+				content: '';
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				border: 1px solid #161C35;
+				transition-duration: 0.3s;
+				transform: rotate(45deg);
+				left: -3px;
+				top: -5px;
+				z-index: -1;
+			}
+			.ftr_social > a:hover::before{
+				background: #161C35;
+			}
+				.ftr_social > a > i{
+				
+				}
+
+		footer > .wrapper > p{
+			color: #000;
+			font-family: 'Montserrat', sans-serif;
+		}
+/* Подвал - конец */
+
+
+/* Адаптив - начало */
+	
+	/* от 1100 - Start */
+	@media screen and (max-width: 1100px){
+		
+		/* 2.2 Сервис - начало */
+		.service_block__item{
+			border: 1px solid #161C35;
+		}
+		/* Сервис - конец */
+		
+		/* 2.4 Команда - начало */
+		.team_block{
+			overflow-x:scroll;
+			padding: 30px 0px;
+		}
+
+		.team_block__item{
+			margin-right: 10px;
+		}
+
+		.team_block__item:last-of-type{
+			margin-right: 0;
+		}
+		/* Команда - конец */
+
+	}
+	/* End */
+
+	/* от 980 - Start */
+	@media screen and (max-width: 980px){
+		
+		/* 2.3 Работа - начало */
+		.work_block{
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.work_block__left{
+			flex-grow: 1;
+		}
+		/* Работа - конец */
+		
+		/* 2.5 Блог - начало */
+		.blog_block__item___right{
+			width: calc(50% - 40px);
+			padding: 20px;
+		}
+		/* Блог - конец */
+
+	}
+	/* End */
+
+	/* от 920 - Start */
+	@media screen and (max-width: 920px){
+		
+		/* 2.1 Карта продукта - начало */
+		.bord{
+			background: url(../images/bg.jpg) center center/cover no-repeat;
+		}
+
+		.bord > .wrapper{
+			flex-wrap: wrap;
+		}
+
+		.bord_left-block{
+			flex: 0 0 100%;
+		}
+
+		.bord_left-block__link{
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		/* Карта продукта - конец */
+
+		/* 2.2 Сервис - начало */
+		.service_block__item{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.service_block__item > a{
+			margin: auto auto 0 auto;
+		}
+		/* Сервис - конец */
+
+		.service, .work, .team, .blog, .contact, footer {
+        	padding: 30px 0;
+    	}
+
+	}
+	/* End */
+
+	/* от 780 - Start */
+	@media screen and (max-width: 780px){
+		
+		/* 2.2 Сервис - начало */
+		.service_block{
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.service_block__item{
+			flex: 0 0 45%;
+			margin: 0 0 20px 0;
+		}
+		/* Сервис - конец */
+
+		/* 2.5 Блог - начало */
+		.blog_block__item{
+			flex: 0 0 100%;
+		}
+		/* Блог - конец */
+	}
+	/* End */
+
+	/* от 720 - Start */
+	@media screen and (max-width: 750px){
+		
+		/*1 Шапка - начало */
+		header {
+	        height: auto;
+	    }
+
+		header > .wrapper{
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.logo {
+	        margin: 5px 0;
+	    }
+
+		.menu{
+			margin: 10px 0;
+		}
+		/* Шапка - конец */
+	}
+	/* End */
+
+	/* от 640 - Start */
+	@media screen and (max-width: 640px){
+
+		/* 2.1 Карта продукта - начало */
+		.bord > .wrapper{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		.bord_left-block h1{
+			font-size: 36px;
+			line-height: 1.1;
+			padding: 8px 0 0 18px;
+		}
+
+		.bord_left-block h1::before{
+			width: 80px;
+        	height: 4px;
+		}
+
+		.bord_left-block h1::after{
+			height: 90px;
+        	width: 4px;
+		}
+		/* Карта продукта - конец */
+
+		/* 2.2 Сервис - начало */
+		.service_block{
+			justify-content: center;
+		}
+
+		.service_block__item{
+			flex: 0 0 320px;
+		}
+		/* Сервис - конец */
+
+	}
+	/* End */
+
+	/* от 580 - Start */
+	@media screen and (max-width: 580px){
+
+		/* 2.7 Подписка - начало */
+		.subscribe_form > input{
+			width: calc(250px - 22px);
+		}
+		/* Подписка - конец */
+	}
+	/* End */
+
+	/* от 510 - Start */
+	@media screen and (max-width: 510px){
+		
+		/*1 Шапка - начало */
+		.menu{
+			margin: 0;
+		}
+
+		.menu ul{
+			text-align: center;
+		}
+
+		.menu ul li{
+			padding-bottom: 22px;
+		}
+
+		.menu ul li:first-child{
+			margin-left: 0;
+		}
+
+		.menu ul li::after{
+			bottom: 11px;
+		}
+		/* Шапка - конец */
+
+		/* 2.5 Блог - начало */
+		.blog_block__item___right{
+			width: calc(50% - 10px);
+			padding: 5px;
+		}
+		/* Блог - конец */
+	}
+	/* End */
+
+	/* от 412 - Start */
+	@media screen and (max-width: 412px){
+
+		.bord > .wrapper > img, .work_block > img{
+			flex: 0 0 auto;
+		}
+
+	}
+	/* End */
+
+	/* от 375 - Start */
+	@media screen and (max-width: 375px){
+		
+		/* 2.1 Карта продукта - начало */
+		.bord_left-block__link{
+			flex-wrap: wrap;
+		}
+
+		.bord_left-block__link a:first-child{
+			padding: 7px 13px 7px 68px;
+			margin-bottom: 10px;
+		}
+		/* Карта продукта - конец */
+
+		/* 2.2 Сервис - начало */
+		.service_block{
+			justify-content: center;
+		}
+
+		.service_block__item{
+			flex: 0 0 290px;
+		}
+		/* Сервис - конец */
+
+		/* 2.7 Подписка - начало */
+		.subscribe_text{
+			font-size: 19px;
+		}
+
+		.subscribe_form > input{
+			width: calc(190px - 22px);
+		}
+		/* Подписка - конец */
+	}
+	/* End */
+
+/* Адаптив - конец */
+
+
