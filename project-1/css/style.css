@@ -1,0 +1,543 @@
+@import url(reset.css);
+
+.clear{
+	clear: both;
+}
+
+#wrapper {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#toplines{
+	height: 18px;
+	background: #ccc url(../images/topLine.png) 0 0 repeat-x;
+}
+
+/*Шапка сайта - начало*/
+
+#header{
+	height: 157px;
+	position: relative;
+}
+
+#logo{
+	width: 230px;
+	height: 71px;
+	
+	background: #fff url(../images/logo.jpg) 0 0 no-repeat;
+	position: absolute;
+	top: 33px;
+	left: 64px;
+}
+
+#logo a{
+	display: block;
+	height: 71px;
+	cursor: pointer;
+}
+
+#hag{
+	width: 82px;
+	height: 164px;
+	position: absolute;
+	top: -19px;
+	right: 44px;
+	background: url(../images/fag.png) 0 0 no-repeat;
+}
+
+#hag a{
+	display: block;
+	height: 164px;
+	cursor: pointer;
+}
+
+ul.nav{
+	width: 520px;
+	height: 30px;
+	position: absolute;
+	top: 56px;
+	left: 377px;
+}
+
+ul.nav li{
+	float: left;
+	list-style: none;
+	margin-right: 27px;
+}
+
+ul.nav li a{
+	text-decoration: none;
+	color: #3f3f3f;
+	font: 16px Arial, sans-serif;
+}
+
+ul.nav li a:hover{
+	text-decoration: underline;
+	color: #2c789c;
+}
+
+/*Шапка сайта - конец*/
+
+/*Люди - начало*/
+
+#piople_wrapper{
+	height: 405px;
+	position: relative;
+	background: #fff url(../images/text.jpg) bottom left no-repeat;
+}
+
+#piople_wrapper	div.piople{
+	width: 429px;
+	height: 405px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: #fff url(../images/people.jpg) 0 0 no-repeat;
+}
+
+#piople_wrapper	div.slogan{
+	position: absolute;
+	top: 212px;
+	left: 69px;
+	text-align: right;
+}
+
+#piople_wrapper	div.slogan h1{
+	font: 500 24px Arial, sans-serif;
+	color: #1d1e1b;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+}
+
+#piople_wrapper	div.slogan p{
+	font: 16px Arial, sans-serif;
+	color: #2c789c;
+}
+
+/*Люди - конец*/
+
+/*Каталог - начало*/
+
+.catalog{
+	background: #fff url(../images/bg_e.png) 0 0 repeat-y;
+	padding: 0 48px 0 41px;
+}
+
+.e1, .e2, .e3{
+	font: 16px Arial,sans-serif;
+	color: #fff;
+	float: left;
+}
+
+.e1 {
+	width: 263px;
+	background: #2c789c url(../images/e1.png) 250px 8px no-repeat;
+	padding: 15px 28px 13px 15px;
+}
+
+.e2 {
+	width: 280px;
+	background: #e5b00d url(../images/e2.png) 268px 8px no-repeat;
+	padding: 15px 23px 13px 20px;
+	position: relative;
+}
+
+.e3 {
+	width: 256px;
+	background: #97ba15 url(../images/e3.png) 254px 8px no-repeat;
+	padding: 15px 24px 13px 26px;
+	position: relative;
+}
+
+.e1 h3, .e2 h3, .e3 h3{
+	font: 500 19px Arial,sans-serif;
+	margin-bottom: 11px;
+}
+
+.e1 a, .e2 a, .e3 a{
+	text-decoration: none;
+	display: block;
+	margin-top: 8px;
+	width: 100px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	padding-top: 4px;
+}
+
+.e2 a{
+	margin-left: 10px;
+}
+
+.e3 a{
+	margin-left: 6px;
+}
+
+.e2 p{
+	padding-left: 10px;
+}
+
+.e3 p{
+	padding-left: 6px;
+}
+
+div.e2 .square1{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 24px solid #2c789c;
+	border-bottom: 25px solid transparent;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+div.e3 .square2{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 24px solid #e5b00d;
+	border-bottom: 25px solid transparent;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+/*Каталог - конец*/
+
+/*Блок контент - начало*/
+
+.bcontent{
+	padding: 18px 63px 31px 56px;
+	background: #fff url(../images/bg_e.png) 0 0 repeat-y;
+	position: relative;
+	font: 16px Arial,sans-serif;
+	color: #7b7d78;
+}
+
+.bcontent .leht_line{
+	position: absolute;
+	width: 29px;
+	height: 100px;
+	background: #fff url(../images/4_line1.png) 0 0 no-repeat;
+	left: 0;
+	bottom: 0;
+	z-index: 4;
+}
+
+.bcontent .right_line{
+	position: absolute;
+	width: 29px;
+	height: 100px;
+	background: #fff url(../images/4_line2.png) 0 0 no-repeat;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+
+.bcontent .line_c{
+	width: 100%;
+	border-top: 1px solid #d2d2d1;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.bcontent div.leftBlock{
+	float: left;
+	width: 600px;
+	margin-right: 40px;
+}
+
+.bcontent div.leftBlock h3, .bcontent div.rightBlock h3{
+	font-size: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.bcontent div.leftBlock h3{
+	margin-bottom: 8px;
+}
+
+.bcontent div.leftBlock p{
+	padding-left: 3px;
+}
+
+.bcontent div.leftBlock p.strong{
+	font-weight: 600;
+	margin-bottom: 23px;
+	color: #1d1e1b;
+
+}
+
+.bcontent div.leftBlock a{
+	display: block;
+	width: 100px;
+	height: 22px;
+	padding: 4px 0 0 0;
+	margin-top: 13px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	background-color: #1d1e1b;
+	border-radius: 10px;
+}
+
+.bcontent div.rightBlock{
+	width: 265px;
+	float: left;
+}
+
+.bcontent div.rightBlock h3{
+	margin-bottom: 6px;
+}
+
+.bcontent div.rightBlock input[type="text"]{
+	width: 247px;
+	height: 32px;
+	border: 1px solid #dedede;
+	line-height: 32px;
+	margin-bottom: 10px;
+	font: 16px Arial,sans-serif;
+	padding: 0 0 0 16px;
+}
+
+.bcontent div.rightBlock input[type="image"]{
+	margin-top: 31px;
+}
+
+/*Блок контент - конец*/
+
+/*Блок дарк - начало*/
+
+.dark{
+	padding: 13px 30px 16px 41px;
+	background-color: #1d1e1b;
+	font: 11px Arial,sans-serif;
+	color: #94998f;
+}
+
+.comand_fil, .comand_cpicok{
+	float: left;
+}
+
+.comand_fil h4, .comand_cpicok h4{
+	font-size: 19px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+.comand_cpicok h4 span{
+	font-size: 16px;
+	text-transform: lowercase;
+	color: #2c789c;
+	margin-left: 17px;
+}
+
+.dark .comand_fil{
+	width: 289px;
+	margin-right: 39px;
+}
+
+.comand_fil img{
+	display: block;
+	width: 289px;
+	height: 115px;
+	margin-bottom: 8px;
+}
+
+.comand_fil p{
+	margin-bottom: 35px;
+	line-height: 1.4; 
+}
+
+.comand_fil a{
+	display: block;
+	width: 100px;
+	height: 22px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	padding-top: 4px;
+	background-color: #2c789c;
+	color: rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+}
+
+.dark .comand_cpicok{
+	width: 297px;
+}
+
+.dark .comand_cpicok .comand_cpicok_bloc{
+	margin-bottom: 40px;
+}
+
+.dark .comand_cpicok .comand_cpicok_bloc:last-child{
+	margin-bottom: 0;
+}
+
+.comand_cpicok_bloc_one{
+	float: left;
+}
+
+.comand_cpicok_bloc_one{
+	margin-right: 10px;
+	width: 111px;
+}
+
+.comand_cpicok_bloc_ty{
+	width: 176px;
+	float: left;
+}
+
+.comand_cpicok_bloc_one img{
+	width: 111px;
+	height: 81px;
+	margin-top: 2px;
+	display: block;
+}
+
+.comand_cpicok_bloc_ty h5{
+	font-size: 13px;
+	color: #fff;
+	margin-bottom: 2px;
+	font-weight: 600;
+}
+
+.comand_cpicok_bloc_ty p{
+	line-height: 1.5;
+
+}
+
+.comand_cpicok_bloc_ty a{
+	color: #2c789c;
+	display: block;
+	margin-top: 2px;
+}
+
+/*Блок дарк - конец*/
+
+/*Блок серый - начало*/
+
+.gray{
+	background-color: #2e302c;
+	padding: 13px 35px 34px 40px;
+	font: 11px Arial,sans-serif;
+	color: #94998f;
+}
+
+.gray h3{
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+}
+
+.gray div.gray_left{
+	width: 290px;
+	float: left;
+	margin-right: 42px;
+}
+
+.gray div.gray_left a{
+	font-size: 16px;
+	color: #2c789c;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.gray div.gray_left p{
+	line-height: 1.4;
+}
+
+.gray div.gray_right{
+	width: 617px;
+	float: left;
+}
+
+.gray div.gray_right > ul{
+	float: left;
+	margin-right: 59px;
+}
+
+.gray div.gray_right > ul:last-child{
+	margin-right: 0;
+}
+
+.gray div.gray_right > ul li{
+	margin-bottom: 19px;
+	padding-left: 45px;
+	background: url(../images/krest.png) 20px center no-repeat; 
+}
+
+.gray div.gray_right > ul li:last-child{
+	margin-bottom: 0;
+}
+
+/*Блок серый - конец*/
+
+
+/*Подвал - начало*/
+.footer {
+	min-height: 154px;
+	background-color: #131412;
+	color: #9b9d99;
+	font: 13px Arial,sans-serif;
+	padding: 0 36px 0 40px;
+}
+
+
+.footer p{
+	float: left;
+	margin-top: 80px;
+}
+
+
+.footer div.footer_right_blok{
+	float: right;
+	margin-top: 78px;
+}
+
+.footer .footer_right_blok ul{
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+
+.footer .footer_right_blok ul li{
+	float: left;
+	margin-right: 21px;
+}
+
+.footer .footer_right_blok ul li:last-child{
+	margin-right: 0px;
+}
+
+.footer .footer_right_blok ul li a{
+	color: #94998f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.footer .footer_right_blok ul li a:hover{
+	color: #2c789c;
+}
+
+.footer .footer_right_blok div{
+	float: right;
+}
+
+.footer .footer_right_blok div a{
+	margin-left: 5px;
+}
+
+/*Подвал - конец*/
