@@ -1,0 +1,988 @@
+@import url(reset.css);
+
+@import url(sistem_js.css);
+
+/* --------------- Подключения шрифтов ---------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/* --------------- Подключения шрифтов ---------*/
+
+/* --------------- Базовые настройки ---------*/
+
+body {
+	color: #7e7f84;
+	font-size: 1em; 
+	font-family: 'Roboto', sans-serif; /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+a, a:visited {
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+
+img{
+	max-width:100%;
+}
+
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* --------------- Базовые настройки ---------*/
+
+.wrapper{
+	max-width: 1170px;
+	min-width: 320px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/* 1 Шапка - начало */
+	
+header{
+	overflow: hidden;
+}
+
+	header .head-top{
+		padding: 24px 0;
+		border-bottom: 1px solid #eeeeee;
+		overflow: hidden;
+	}
+
+		.head-top_logo{
+			float: left;
+			font-size: 1.40em;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #67686d !important;
+			margin: 6px 0 0 0;
+			user-select: none;
+		}
+
+		.head-top_contakt-basket{
+			float: right;
+			letter-spacing: 0.7px;
+		}
+
+			.head-top_contakt-basket__tel{
+				display: inline-block;
+				font-weight: bold;
+				font-size: 0.75em;
+				margin: 0 28px 0 0;
+			}
+				.head-top_contakt-basket__tel::before{
+					content: url(../images/ico-phone.jpg);
+					margin: 0 7px 0 0;
+					position: relative;
+					top: 4px;
+				}
+
+			.head-top_contakt-basket__checkout{
+				display: inline-block;
+				border: 1px solid #eeeeee;
+				padding: 6px 25px 8px 18px;
+			}
+				.head-top_contakt-basket__checkout span{
+					font-size: 0.75em;
+					margin: 0 35px 0 0;
+				}
+					.head-top_contakt-basket__checkout span::before{
+						content: url(../images/ico-basket.jpg);
+						margin: 0 6px 0 0;
+						position: relative;
+						top: 3px;
+					}
+				.head-top_contakt-basket__checkout a{
+					font-weight: bold;
+					font-size: 0.75em;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: #7e7f84;
+					user-select: none;
+				}
+					.head-top_contakt-basket__checkout a:hover{
+						text-decoration: underline;
+					}
+
+	header .head-bottom{
+		overflow: hidden;	
+	}
+			
+		/* 1.1 Навигация - начало */
+		.head-bottom nav{
+			float: left;
+		}
+			.head-bottom_navigation{
+				overflow: hidden;	
+			}
+				.head-bottom_navigation li{
+					float: left;
+					padding: 13px 30px 13px 0;
+				}
+					.head-bottom_navigation li a{
+						font-size: 0.875em;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: #7e7f84;
+						user-select: none;
+					}
+						.head-bottom_navigation li a:hover{
+							color: #f45a40;
+						}
+		/* Навигация - конец */
+
+		/* 1.2 Поиск - начало */
+		.head-bottom_search{
+			float: left;
+			overflow: hidden;
+			padding: 13px 0 0 8px;
+		}
+			.head-bottom_search input[type="image"]{
+				float: left;
+				margin: 1px 6px 0 0;
+			}
+			.head-bottom_search input[type="search"]{
+				float: left;
+				font-weight: 300;
+				font-size: 0.875em;
+				font-family: 'Roboto', sans-serif;
+				padding: 0;
+				border: none;
+			}
+		/*Поиск - конец */
+
+/* Шапка - конец */
+
+/* 2 Основной контент - начало */
+
+main{
+	overflow: hidden;
+}
+	
+	/* 2.1 Блок слайдер - начало */
+	main .my-slider{
+		overflow: hidden;
+	}
+		.my-slider li{
+			position: relative;
+			z-index: 1;
+		}
+			.my-slider li img{
+				width: 100%;
+				display: block;
+			}
+
+			.my-slider_post{
+				position: absolute;
+				top: 30%;
+				left: 3%;
+				color: #f45a40;
+				background: rgba(255,255,255,0.5);
+				box-shadow: 0 0 10px rgba(0,0,0,0.1);
+				padding: 10px;
+			}
+				.my-slider_post h2{
+					font-weight: bold;
+					font-size: 3.6875em;
+					line-height: 1.1;
+					margin: 0 0 5px 0;
+				}
+				.my-slider_post p{
+					font-weight: 500;
+					font-size: 0.875em;
+					line-height: 1.5;
+				}
+
+				.unslider-nav{
+					position: relative;
+					margin: 0 0 0 0;
+					z-index: 2;
+					top: -40px;
+				}		
+	/* Блок слайдер - конец */
+
+	/* 2.2 Посты - начало */
+	main > .post-block{
+		margin-top: 35px;
+		margin-bottom: 60px;
+		overflow: hidden;
+	}
+
+		.post-block_list{
+			float: left;
+			width: 31.62%;
+			margin: 0 2.57% 0 0;
+		}
+		.post-block_list:last-child{
+			margin-right: 0;
+		}
+			.post-block_list img{
+				display: block;
+				margin: 0 auto 22px auto;
+			}
+			.post-block_list h3{
+				font-size: 1.40em;
+				font-family: 'Roboto Condensed', sans-serif;
+				text-transform: uppercase;
+				margin: 0 0 20px 0;
+			}
+				.post-block_list h3 a{
+					text-decoration: none;
+					user-select: none;
+				}
+				.post-block_list h3 a:hover{
+					text-decoration: underline;
+				}
+
+			.post-block_list p{
+				font-size: 0.875em;
+				line-height: 1.5;
+			}
+	/* Посты - конец */
+
+	/* 2.3 Продукты - начало */
+	main > .product-block{
+		margin-bottom: 60px;
+		overflow: hidden;
+	}
+		.product-block h2{
+			font-size: 1.40em;
+			font-family: 'Roboto Condensed', sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			color: #67686d;
+			margin: 0 0 36px 0;
+		}
+
+		.product-block_list{
+			float: left;
+			width: 23.07%;
+			margin: 0 2.573% 0 0;
+		}
+		.product-block_list:last-child{
+			margin-right: 0;
+		}
+
+			.product-block_list__top{
+				overflow: hidden;
+			}
+				.product-block_list__top img{
+					display: block;
+					width: 100%;
+				}
+
+			.product-block_list__bottom{
+				padding: 20px;
+				border: 1px solid #eee;
+			}
+
+				.product-block_list__bottom___head{
+					border-bottom: 1px solid #eeeeee;
+					overflow: hidden;
+				}
+					.product-block_list__bottom___head h3{
+						font-weight: 500;
+						font-size: 1.125em;
+						text-transform: uppercase;
+						margin: 0 0 8px 0;
+					}
+						.product-block_list__bottom___head h3 a{
+							color: #67686d;
+							text-decoration: none;
+						}
+						.product-block_list__bottom___head h3 a:hover{
+							text-decoration: underline;
+							color: #f45a40;
+						}
+					.product-block_list__bottom___head strong{
+						display: block;
+						font-style: italic;
+						font-weight: 300;
+						font-size: 0.875em;
+						text-transform: uppercase;
+						margin: 0 0 8px 0;
+						color: #67686d;
+					}
+					.product-block_list__bottom___head p{
+						font-size: 0.625em;
+						line-height: 1.5;
+						margin: 0 0 10px 0;
+					}
+
+				.product-block_list__bottom___ftr{
+					padding: 13px 0 0 0;
+				}
+					.product-block_list__bottom___ftr p{
+						overflow: hidden;
+						font-weight: 500;
+						font-size: 0.875em;
+						color: #f45a40;
+					}
+						.product-block_list__bottom___ftr p span:first-child{
+							display: block;
+							float: left;
+						}
+						.product-block_list__bottom___ftr p span:last-child{
+							display: block;
+							float: right;
+						}
+	/* Продукты - конец */
+
+	/* 2.4 О компании - начало */
+	main > .about{
+		margin-bottom: 30px;
+		overflow: hidden;
+	}
+
+		.about_text{
+			float: left;
+			width: 60%;
+		}
+			.about_text h2{
+				font-size: 1.40em;
+				color: #67686d;
+				margin: 0 0 40px 0;
+			}
+			.about_text p{
+				font-style: italic;
+				font-size: 0.875em;
+				line-height: 1.5;
+				margin: 0 0 25px 0;
+			}
+
+		.about_map{
+			float: right;
+			width: 31.624%;
+			padding: 28px 0 0 0;
+		}
+
+			.about_map__wrapper{
+				position: relative;
+				padding-bottom: 85.13%; /* Соотношения сторон iframe: 317(высота) / 370(ширина) */
+				height: 0;
+				overflow: hidden;
+			}
+				.about_map__wrapper iframe{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+	/* О компании - конец */
+
+	/* 2.5 Форма подписки - начало */
+	main > .subscription{
+		background: #f45a40;
+	}
+		.subscription > .wrapper{
+			padding: 30px 0;
+		}
+			.subscription h2{
+				float: left;
+				font-size: 1.40em;
+				font-weight: 400;
+				font-family: 'Roboto Condensed', sans-serif;
+				text-transform: uppercase;
+				color: #fff;
+				margin: 9px 0 0 0;
+			}
+				.subscription h2 strong{
+					font-weight: 600;
+				}
+
+			.subscription_form{
+				float: right;
+				overflow: hidden;
+			}
+				.subscription_form input[type="email"]{
+					float: left;
+					margin: 0 23px 0 0;
+					color: #7e7f84;
+					font-size: 0.875em;
+					font-family: 'Roboto', sans-serif;
+					text-transform: uppercase;
+					padding: 10px 25px 10px 25px;
+					border: none;
+				}
+				.subscription_form input[type="submit"]{
+					float: left;
+					background: #ff674f;
+					font-size: 0.875em;
+					font-family: 'Roboto', sans-serif;
+					text-transform: uppercase;
+					padding: 10px 20px;
+					color: #fff;
+					border: none;
+					cursor: pointer;
+				}
+	/* Форма подписки - конец */
+
+/* Основной контент - конец */
+
+/* 3 Подвал - начало */
+
+footer{
+	background: #2a2d34;
+}
+	footer > .wrapper{
+		padding: 42px 0;
+	}
+		footer .ftr-block{
+			float: left;
+			width: 23.07%;
+			margin: 0 2.573% 0 0;
+		}
+		footer .ftr-block:last-child{
+			margin-right: 0;
+		}
+			.ftr-block h3{
+				font-size: 1.40em;
+				font-family: 'Roboto Condensed', sans-serif;
+				text-transform: uppercase;
+				color: #fff;
+				margin: 0 0 15px 0;
+			}
+
+			/* 3.1 Адрес - начало */
+			.ftr-block address{
+				font-style: normal;
+			}
+				.ftr-block address p{
+					margin: 0 0 20px 0;
+					line-height: 1.4;
+					font-weight: 500;
+					font-size: 0.875em;
+				}
+			/* Адрес - конец */
+
+			/* 3.2 Посты - начало */
+			.ftr-block_post h4{
+				font-weight: 500;
+				font-size: 0.875em;
+				line-height: 1.3;
+			}
+				.ftr-block_post h4 a{
+					color: #fff;
+					text-decoration: none;	
+				}
+				.ftr-block_post h4 a:hover{
+					text-decoration: underline;
+				}
+			.ftr-block_post p{
+				margin: 0 0 25px 0;	
+				font-size: 0.875em;
+				line-height: 1.4;
+			}
+			/* Посты - конец */
+
+			/* 3.3 Саппорт - начало */
+			.ftr-block_support{
+				columns: 2;
+			}
+				.ftr-block_support span{
+					display: block;
+					font-size: 0.875em;
+					margin: 0 0 6px 0;
+				}
+					.ftr-block_support span a{
+						color: #7e7f84;
+						text-decoration: none;
+					}
+					.ftr-block_support span a:hover{
+						text-decoration: underline;
+					}
+			/* Саппорт - конец */
+
+			/* 3.4 Контактная форма - начало */
+			.ftr-block_сontact input[type="email"], .ftr-block_сontact textarea{
+				width: 100%;
+				box-sizing: border-box;
+				padding: 10px 20px;
+				border: none;
+				font-size: 0.75em;
+				font-family: 'Roboto', sans-serif;
+				text-transform: uppercase;
+				color: #7e7f84;
+				margin: 0 0 20px 0;
+			}
+			.ftr-block_сontact textarea{
+				resize: none;
+			}
+			.ftr-block_сontact input[type="submit"]{
+				background: #f45a40;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				color: #fff;
+				cursor: pointer;
+				border: none;
+				font-size: 0.75em;
+				font-family: 'Roboto', sans-serif;
+			}
+			/* Контактная форма - конец */
+
+/* Подвал - конец */
+
+
+/* Адаптив - начало */
+
+	/* от 1170 - Start */
+	@media screen and (max-width:1170px){
+		.wrapper{
+			max-width: 96%;
+			margin: 0 auto;
+		}	
+	}
+	/* до 861 - End */
+
+	/* от 860 - Start */
+	@media screen and (max-width:860px){
+
+		/* 2.1 Блок слайдер - начало */
+		.my-slider_post{
+			top: 30%;
+			left: 3%;
+			background: rgba(255,255,255,0.4);
+		}
+			.my-slider_post h2{
+				font-size: 3em;
+			}
+		/* Блок слайдер - конец */
+
+		/* 2.2 Посты - начало */
+		main > .post-block{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+			.post-block_list{
+				float: none;
+				width: 100%;
+				margin: 0 0 20px 0;
+				overflow: hidden;
+			}
+			.post-block_list:last-child{
+				margin-right: 0;
+			}
+				.post-block_list img{
+					display: block;
+					width: 45%;
+					float: left;
+					margin: 0 20px 0 0;
+				}
+		/* Посты - конец */
+
+		/* 2.3 Продукты - начало */
+		main > .product-block{
+		margin-bottom: 40px;
+		}
+
+			.product-block_list{
+				float: left;
+				width: 49%;
+				margin: 0 2% 15px 0;
+				border: 1px solid #eee;
+				box-sizing: border-box;
+			}
+			.product-block_list:nth-of-type(2n){
+				margin-right: 0;
+			}
+					.product-block_list__top img{
+						display: block;
+						width: inherit;
+						margin: 0 auto;
+					}
+
+				.product-block_list__bottom{
+					border: none;
+				}
+		/* Продукты - конец */
+
+		/* 2.4 О компании - начало */
+		main > .about{
+			margin-bottom: 20px;
+			overflow: hidden;
+		}
+
+			.about_text{
+				float: none;
+				width: 100%;
+			}
+				.about_text h2{
+					margin: 0 0 25px 0;
+					text-align: center;
+				}
+				.about_text p{
+					margin: 0 0 15px 0;
+				}
+
+			.about_map{
+				float: none;
+				width: 100%;
+				padding: 0;
+			}
+
+				.about_map__wrapper{
+					padding-bottom: 40%; /* Соотношения сторон iframe: 317(высота) / 370(ширина) */
+				}
+		/* О компании - конец */
+
+		/* 2.5 Форма подписки - начало */
+			.subscription > .wrapper{
+				padding: 20px 0;
+			}
+				.subscription h2{
+					float: none;
+					margin: 0 0 15px 0;
+					text-align: center;
+				}
+
+				.subscription_form{
+					float: none;
+					overflow: hidden;
+					display: table;
+					margin: 0 auto;
+				}
+		/* Форма подписки - конец */
+
+		/* 3 Подвал - начало */
+		footer > .wrapper{
+		padding: 32px 0;
+		}
+			footer .ftr-block{
+				float: left;
+				width: 48%;
+				margin: 0 4% 15px 0;
+			}
+			footer .ftr-block:nth-child(2n){
+				margin-right: 0;
+			}
+		/* Подвал - конец */
+
+	}
+	/* до 768 - End */
+
+	/* от 767 - Start */
+	@media screen and (max-width:767px){
+		
+		/* 1.1 Навигация - начало */
+		.head-bottom nav{
+			float: none;
+			border-bottom: 1px solid #eee;
+		}
+			.head-bottom_navigation{
+				width: 100%	
+			}
+				.head-bottom_navigation li{
+					padding: 13px 0 13px 0;
+					text-align: center;
+					width: 14.285%;
+				}
+		/* Навигация - конец */
+
+		/* 1.2 Поиск - начало */
+		.head-bottom_search{
+			width: 100%;
+			float: none;
+			overflow: hidden;
+			padding: 5px 5px;
+			border: 1px solid #eee;
+			margin: 5px 0;
+			box-sizing: border-box;
+		}
+
+			.head-bottom_search input[type="image"]{
+				float: left;
+				margin: 1px 6px 0 0;
+			}
+			.head-bottom_search input[type="search"]{
+				float: left;
+				width: 95%;
+			}
+		/*Поиск - конец */
+
+		/* 2.1 Блок слайдер - начало */
+		.my-slider_post{
+				top: 30%;
+				left: 3%;
+				background: rgba(255,255,255,0.4);
+			}
+				.my-slider_post h2{
+					font-size: 2em;
+				}
+
+				.my-slider_post p{
+					font-size: 0.8em;
+				}
+		/* Блок слайдер - конец */
+
+	}
+	/* до 600 - End */
+
+	/* от 599 - Start */
+	@media screen and (max-width:599px){
+
+		/* 1 Шапка - начало */
+		header .head-top{
+			padding: 14px 0;
+		}
+	
+			.head-top_logo{
+				float: none;
+				display: block;
+				text-align: center;
+				margin: 0 0 10px 0;
+			}
+	
+			.head-top_contakt-basket{
+				float: none;
+				width: 100%;
+				overflow: hidden;
+			}
+
+				.head-top_contakt-basket__tel{
+					display: block;
+					float: left;
+					width: 50%;
+					margin: 0;
+					text-align: center;
+					padding: 7px 0 0 0;
+				}
+
+				.head-top_contakt-basket__checkout{
+					overflow: hidden;
+					display: block;
+					float: right;
+					width: 50%;
+					box-sizing: border-box;
+				}
+
+					.head-top_contakt-basket__checkout span{
+						margin: 0 0 0 0;
+						display: block;
+						float: left;
+						width: 50%;
+						text-align: center;
+					}
+					
+					.head-top_contakt-basket__checkout a{
+						float: right;
+						display: block;
+						width: 50%;
+						padding: 6px 0 0 0;
+						text-align: center;
+					}
+
+			/* 1.1 Навигация - начало */
+			.head-bottom nav{
+				float: none;
+				border-bottom: 1px solid #eee;
+			}
+				.head-bottom_navigation{
+					width: 100%;
+				}
+					.head-bottom_navigation li{
+						padding: 5px 0 5px 0;
+						width: 25%;
+					}
+			/* Навигация - конец */
+
+		/* Шапка - конец */
+
+		/* 2.1 Блок слайдер - начало */
+		.my-slider_post{
+			top: 30%;
+			left: 3%;
+			background: rgba(255,255,255,0.4);
+		}
+			.my-slider_post h2{
+				font-size: 1.75em;
+			}
+			.my-slider_post p{
+				font-size: 0.75em;
+			}
+		/* Блок слайдер - конец */
+
+		/* 2.2 Посты - начало */
+		main > .post-block{
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+		/* Посты - конец */
+
+		/* 2.3 Продукты - начало */
+		main > .product-block{
+			margin-bottom: 10px;
+		}
+			.product-block h2{
+				margin: 0 0 20px 0;
+			}
+		/* Продукты - конец */
+
+		/* 2.4 О компании - начало */
+		.about_text h2{
+			margin: 0 0 15px 0;
+		}
+		/* О компании - конец */
+		
+		/* 2.5 Форма подписки - начало */
+		.subscription > .wrapper{
+			padding: 15px 0;
+		}
+			.subscription h2{
+				font-size: 1.30em;
+			}
+		/* Форма подписки - конец */
+
+	}
+	/* до 480 - End */
+
+	/* от 479 - Start */
+	@media screen and (max-width:479px){
+		
+		header .head-top{
+			padding: 10px 0;
+		}
+
+			.head-top_contakt-basket__checkout{
+				padding: 6px 10px 8px 10px;
+			}
+
+			/* 1.2 Поиск - начало */
+			.head-bottom_search input[type="search"]{
+				width: 93%;
+			}
+			/*Поиск - конец */
+
+			/* 2.1 Блок слайдер - начало */
+			.my-slider_post{
+				top: 30%;
+				left: 3%;
+				background: rgba(255,255,255,0.4);
+			}
+				.my-slider_post h2{
+					font-size: 1.2em;
+				}
+				.my-slider_post p{
+					font-size: 0.5em;
+				}
+
+				.unslider-nav{
+					top: -30px;
+				}
+			/* Блок слайдер - конец */
+
+			/* 2.2 Посты - начало */
+			.post-block_list{
+				border: 1px solid #eee;
+				box-sizing: border-box;
+				margin: 0 0 10px 0;
+				padding: 0 10px 5px 10px;
+			}
+				.post-block_list h3{
+					font-size: 1.20em;
+					margin: 0 0 10px 0;
+				}
+				.post-block_list img{
+					width: 80%;
+					float: none;
+					margin: 0 auto 10px auto;
+				}
+				
+			/* Посты - конец */
+
+			/* 2.3 Продукты - начало */
+			main > .product-block{
+				margin-bottom: 10px;
+			}
+				.product-block h2{
+					margin: 10px 0 20px 0;
+				}
+
+				.product-block_list{
+					float: none;
+					width: 100%;
+					box-sizing: border-box;
+					margin: 0 0 15px 0;
+				}
+
+					.product-block_list__bottom{
+						padding: 20px 20px 13px 20px;
+					}
+
+						.product-block_list__bottom___head p{
+							font-size: 0.75em;
+						}
+			/* Продукты - конец */
+
+			/* 2.5 Форма подписки - начало */
+			.subscription h2{
+				line-height: 1.2;
+			}
+			/* Форма подписки - конец */
+
+		/* 3 Подвал - начало */
+		footer > .wrapper{
+			padding: 15px 0;
+			}
+				footer .ftr-block{
+					float: none;
+					width: 100%;
+					margin: 0 0 15px 0;
+				}
+					.ftr-block h3{
+						font-size: 1.40em;
+						
+					}
+
+					.ftr-block_post p{
+						margin: 0 0 15px 0;	
+					}
+		/* Подвал - конец */
+	}
+	/* до 380 - End */
+
+	/* от 379 - Start */
+	@media screen and (max-width:379px){
+
+		.head-top_contakt-basket__checkout{
+				padding: 6px 0px 8px 0px;
+		}
+
+		.about.wrapper{
+			padding: 0 5px;
+			box-sizing: border-box;
+		}
+
+		.subscription_form input[type="email"]{
+			margin: 0 15px 0 0;
+			padding: 10px 20px 10px 20px;
+		}
+
+		footer > .wrapper{
+			padding: 15px 5px;
+			box-sizing: border-box;
+		}
+
+	}
+	/* до 320 - End */
+
+/* Адаптив - конец */
