@@ -561,7 +561,7 @@ img {
 .banner {
   background: url("../img/banner1.jpg") left top/cover no-repeat #00b5d7;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   margin: 0 0 100px 0; }
   .banner .banner__information {
     width: 48.71795%;
@@ -604,7 +604,7 @@ img {
         box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); }
   .banner--left {
     background: url("../img/banner2.jpg") right top/cover no-repeat #d7dbd5;
-    justify-content: left; }
+    justify-content: flex-start; }
     .banner--left .banner__information {
       width: 51.28205%;
       margin: 0 0 0 4%; }
