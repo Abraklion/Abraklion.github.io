@@ -810,6 +810,7 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: rgba(243, 129, 129, 0.9);
 }
 .slider__carousel {
   min-height: inherit;
