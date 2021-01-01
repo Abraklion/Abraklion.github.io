@@ -88,9 +88,10 @@ $(document).ready(function () {
         $(this).parents('.element').removeClass('element--focus');
     });
 
-    const handler = function () {
-        this.innerHTML = '<div class="map__header"><svg class="map__svg"><use xlink:href="img/symbol/sprite.svg#pin"></use></svg><h2 class="map__title">Open map</h2></div><div class="map__content"><iframe tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.305256611305!2d55.95504651618541!3d54.739434280294546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a14deed8e07%3A0xad1d1a2aa95f880f!2z0KHQsNC70LDQstCw0YIg0K7Qu9Cw0LXQsg!5e0!3m2!1sru!2sru!4v1609317821096!5m2!1sru!2sru" aria-hidden="false"></iframe></div>';
+    // Вызов карту по клику
+    var handler = function () {
+        this.innerHTML = '<div class="map__block"><div class="map__header"><svg class="map__svg"><use xlink:href="img/symbol/sprite.svg#pin"></use></svg><h2 class="map__title">Open map</h2></div><div class="map__content"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.305256611305!2d55.95504651618541!3d54.739434280294546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a14deed8e07%3A0xad1d1a2aa95f880f!2z0KHQsNC70LDQstCw0YIg0K7Qu9Cw0LXQsg!5e0!3m2!1sru!2sru!4v1609317821096!5m2!1sru!2sru" aria-hidden="false"></iframe></div></div>';
     };
-    document.querySelector('.map__block').addEventListener('click', function (e) { this.removeEventListener('click', handler, false); handler.apply(this, arguments); } , false);
+    document.querySelector('.map__wrapper').addEventListener('click', function (e) { this.removeEventListener('click', handler, false); handler.apply(this, arguments); } , false);
 
 });
