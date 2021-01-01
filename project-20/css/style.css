@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../css/owl.carousel.css";
 @font-face {
   font-family: 'Kaushan Script';
   font-style: normal;
